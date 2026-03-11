@@ -8,6 +8,10 @@ becomes
 
 [Example Domain](https://example.com)
 
+## Requirement 
+
+- curl
+
 ## Installation
 
 - lazy.nvim
