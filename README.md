@@ -1,12 +1,12 @@
-# markdown-url.nvim
+# markdown-url
 
-Automatically convert pasted URLs into Markdown links.
+A nvim plugin that automatically convert pasted URLs into Markdown links. 
 
-https://example.com
+`https://example.com`
 
-becomes
+will be pasted to
 
-[Example Domain](https://example.com)
+`[Example Domain](https://example.com)`
 
 ## Requirement 
 
@@ -21,7 +21,9 @@ becomes
   "NineBeans2/markdown-url",
   ft="markdown",
   config = function()
-    require("markdown-url").setup()
+    require("markdown-url").setup(
+    --        {keymap = "p"}
+            )
   end
 }
 
